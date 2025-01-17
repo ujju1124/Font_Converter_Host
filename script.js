@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    const apiKey = 'AIzaSyAFxVdlk43G_alE2YTrs5c2NiFstaIUm8Q'; // API Key
+    const apiKey = 'AIzaSyAFxVdlk43G_alE2YTrs5c2NiFstaIUm8Q';  // Replace with your actual API Key
     const fontSelector = $('#fontSelector');
     const convertedText = $('#convertedText');
     const userText = $('#userText');
