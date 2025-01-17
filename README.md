@@ -31,7 +31,7 @@ This project allows users to input any text and dynamically change its font fami
 **Installation**:
 
 Clone or download the repository:
-git clone <repository_url>
+git clone https://github.com/ujju1124/Font_Converter_Host
 
 Open the index.html file in your preferred browser to use the tool.
 
