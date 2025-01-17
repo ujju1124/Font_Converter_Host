@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Font Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Project Intro Section -->
+        <header>
+            <h1>Dynamic Font Converter</h1>
+            <p>This project allows users to input any text and dynamically change the font, weight, and style based on their preferences. It’s a fun tool for exploring different font styles and customizing text for various use cases.</p>
+        </header>
+
+        <div class="input-container">
+            <!-- Pre-written text "The quick brown fox jumps over a lazy dog" in the textarea -->
+            <textarea id="userText">The quick brown fox jumps over a lazy dog</textarea>
+        </div>
+
+        <div class="font-options">
+            <label for="fontSelector">Font Family: </label>
+            <select id="fontSelector">
+                <option value="">Select Font</option>
+            </select>
+
+            <label for="fontWeight">Font Weight: </label>
+            <select id="fontWeight">
+                <option value="">Select Weight</option>
+                <option value="normal">Normal</option>
+                <option value="bold">Bold</option>
+            </select>
+
+            <label for="fontStyle">Font Style: </label>
+            <select id="fontStyle">
+                <option value="">Select Style</option>
+                <option value="normal">Normal</option>
+                <option value="italic">Italic</option>
+            </select>
+        </div>
+
+        <div class="converted-text-container">
+            <h3>Converted Text:</h3>
+            <div id="convertedText">
+                Your converted text will appear here...
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="copyright">
+        <p>&copy; 2025 Ujwal Dahal. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

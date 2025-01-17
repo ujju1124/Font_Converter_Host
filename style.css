@@ -1,0 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Baloo+2&family=Bebas+Neue&family=Lato:ital@1&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:wght@500&family=Oswald&family=Poppins:wght@400;700&family=Roboto:wght@500&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=UnifrakturMaguntia&family=Workbench&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+
+/* Global styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, #f0f0f5, #FFFDD0
+    ); /* Soft gradient background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h3 {
+    color: #222;
+    font-family: "Texturina", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style:normal;
+  font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 1px;
+}
+
+/* Container with Neumorphism */
+.container {
+    
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #fdfdf2;
+    border-radius: 25px;
+    border: 1px solid rgb(234, 224, 224);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.9); /* Neumorphic shadow effect */
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #222;
+    font-family: "UnifrakturMaguntia", serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-weight: 400;
+    font-family: "Tinos", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Enhanced input fields */
+.input-container textarea {
+    width: 96%;
+    height: 220px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 12px; /* Rounded edges for inputs */
+    background-color: #f8f8f8;
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.1), inset -5px -5px 15px rgba(255, 255, 255, 0.9); /* Neumorphism effect */
+    transition: all 0.3s ease-in-out;
+}
+
+.input-container textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Focus effect with a blue glow */
+    outline: none;
+}
+
+/* Font options with flex and modern touches */
+.font-options {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.font-options label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.font-options select {
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f4f8;
+    width: 150px;
+    transition: all 0.3s ease;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.1), inset -4px -4px 10px rgba(255, 255, 255, 0.9); /* Neumorphism */
+}
+
+.font-options select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Converted text area */
+.converted-text-container {
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 25px;
+    position: relative;
+}
+
+#convertedText {
+    font-size: 1.2rem;
+    color: #444;
+    min-height: 100px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    padding-right: 60px;
+    margin-top: 20px;
+    width: 96%;
+    height: 320px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #f8f8f8;
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.1), inset -5px -5px 15px rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease-in-out;
+    overflow: scroll;
+}
+
+#resultBox {
+    border: 2px solid #4CAF50;  /* Green border for the box */
+    padding: 15px;
+    background-color: #e8f5e9;  /* Light green background */
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    min-height: 100px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #333;
+    display: none; /* Hide initially, show when there is content */
+}
+
+/* Select2 styles with modern touch */
+.select2-container .select2-dropdown {
+    top: 100% !important;
+    bottom: auto !important;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.select2-search__field {
+    background-image: url('Images/icons8-search-24.png');
+    background-repeat: no-repeat;
+    background-position: 3px center;
+    padding-left: 40px;
+    font-size: 16px;
+    z-index: 1;
+    text-indent: 27px;
+}
+
+.select2-container--default .select2-selection--single {
+    padding: 12px;
+    margin-right: 6px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 145px;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease;
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.1), inset -5px -5px 15px rgba(255, 255, 255, 0.9); /* Neumorphism */
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 20px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 8px;
+    right: 1px;
+    width: 20px;
+}
+
+/* Hover Effects for Interactive Elements */
+.font-options select:hover {
+    background-color: #e0e4e8; /* Subtle hover effect */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+.input-container textarea:hover {
+    background-color: #f1f1f5;
+    transform: scale(1.03);
+}
+
+button, .font-options select:focus {
+    cursor: pointer; /* Makes it clear they are clickable */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .font-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .font-options select {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+}
+
+
+/* Copyright Section */
+.copyright {
+    text-align: center;    /* Center the text horizontally */
+    font-size: 12px;       /* Make the font size smaller */
+    padding: 2px 0;       /* Reduce the padding (top and bottom) to make it smaller */
+    margin-top: 20px;      /* Add margin above if needed */
+    background-color: #1d1d1b; /* Dark background for visibility */
+    color: white;          /* Text color white */
+    position: static;
+    
+}
+
+
+footer p {
+    opacity: 0.8; /* Makes the text slightly transparent */
+    font-size: 14px; /* Optional: Adjust font size if needed */
+    color: rgba(251, 249, 249, 0.9); /* Slightly muted color for text */
+}
