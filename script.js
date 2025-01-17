@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    const apiKey = 'AIzaSyCS7oSXVqDkr-WQ-S80EZNyVb-tqzd2Kbw'; // API Key
+    const apiKey = 'AIzaSyAFxVdlk43G_alE2YTrs5c2NiFstaIUm8Q'; // API Key
     const fontSelector = $('#fontSelector');
     const convertedText = $('#convertedText');
     const userText = $('#userText');
