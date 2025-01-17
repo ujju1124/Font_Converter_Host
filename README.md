@@ -1,7 +1,8 @@
 **Dynamic Font Converter**
 This project allows users to input any text and dynamically change its font family, weight, and style. It’s a tool for exploring different font styles and customizing text for various use cases. The converted text can be viewed in real-time based on the user's selections.
 
-**Features**
+**Features**:
+
 **Font Customization**: Allows users to change the font family, weight, and style of the input text.
 
 **Live Preview**: Shows the converted text immediately as the user selects different font options.
